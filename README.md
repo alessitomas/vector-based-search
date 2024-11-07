@@ -65,13 +65,15 @@ docker run -d -p 1413:8888 home
 
 
 Customer Interviews and Feedback
-Five potential customers were interviewed. The system was shown to each user, and feedback was collected. The first user, a researcher, found it difficult to locate relevant papers. They mentioned that results were often too broad. The second user, a student, said the search results were not specific to their needs. They requested more focused recommendations. The third user, a content curator, expressed frustration with the time spent on irrelevant articles. The fourth user, a data analyst, found that the system lacked emphasis on specific methodologies. The fifth user, a consultant, wanted more problem-solving based recommendations.
+Five potential customers were interviewed. The system was shown to each user, and feedback was collected.
 
 Validation of Pain Point and System Effectiveness
-All interviewees confirmed the existence of the pain point. They stated that finding relevant content was time-consuming. The system performed well in identifying broad similarities. However, users found the results lacked precision for their needs. The recommendations were useful, but they were not personalized enough. Users suggested incorporating more refined search filters. Some also recommended that the system learn from user interactions over time.
+All interviewees confirmed the existence of the pain point. They stated that finding relevant content was time-consuming. However, users found the results lacked precision for their needs. The recommendations were useful, but they were not personalized enough. Users suggested incorporating more refined search filters. Some also recommended that the system learn from user interactions over time.
 
-Possible Improvements
-Users suggested several improvements. One recommendation was adding filters based on methodologies or keywords. Another suggestion was to integrate a user feedback system to refine results. Users also proposed allowing for profile customization based on preferences. This would help the system better tailor recommendations.
+
+![Alt text](feedbacks.png)
+
+
 
 
 ## Authors
