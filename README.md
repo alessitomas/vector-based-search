@@ -71,6 +71,8 @@ Validation of Pain Point and System Effectiveness
 All interviewees confirmed the existence of the pain point. They stated that finding relevant content was time-consuming. However, users found the results lacked precision for their needs. The recommendations were useful, but they were not personalized enough. Users suggested incorporating more refined search filters. Some also recommended that the system learn from user interactions over time.
 
 
+#### Typical phrases and reviews
+
 ![Alt text](feedbacks.png)
 
 
