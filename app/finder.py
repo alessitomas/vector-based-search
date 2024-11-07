@@ -79,7 +79,7 @@ class FinderModel:
 
         return embedding_layer
 
-    def retrieve_publications(self, query, top_k=5):
+    def retrieve_publications(self, query, top_k=10):
         
         query_embedding = self.get_query_embedding(query)
 
@@ -95,12 +95,13 @@ class FinderModel:
         
         results_list = []
         for index, row in zip(top_k_indices.numpy(), results.iterrows()):
-            results_list.append({
-                "index": int(index),
-                "title": row[1]['title'],  
-                "abstract": row[1]['abstract'],
-                "similarity": similarities[0, index].item()  
-            })
+            if similarities[0, index].item() > 0.4:
+                results_list.append({
+                    "index": int(index),
+                    "title": row[1]['title'],  
+                    "abstract": row[1]['abstract'],
+                    "similarity": similarities[0, index].item()  
+                })
 
         return results_list
 

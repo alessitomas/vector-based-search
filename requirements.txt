@@ -5,3 +5,5 @@ torch
 matplotlib
 pandas
 scikit-learn
+httpx
+plotly
