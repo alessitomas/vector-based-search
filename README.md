@@ -12,7 +12,7 @@ This dataset available for search is a combination of the following data:
 
 ## Embedding Generation Process
 
-500 Publications are represented as a dense vector embedding. The process begins by converting each word in the publication's abstract to a 50-dimensional GloVe vector. Then, a mean-pooling step transforms these word-level embeddings into a single 50-dimensional vector for each abstract. To tailor these embeddings to our dataset, we use a denoising autoencoder with a linear encoder-decoder structure, which reduces the dimensionality to 32. This model is trained to focus on features relevant to the document collection, enhancing its ability to capture essential semantic relationships.
+500 abtracts of publications are represented as a dense vector embedding (I used only 500, because I lacked computer power to efficient procces more observations) . The process begins by converting each word in the publication's abstract to a 50-dimensional GloVe vector. Then, a mean-pooling step transforms these word-level embeddings into a single 50-dimensional vector for each abstract. To tailor these embeddings to our dataset, we use a denoising autoencoder with a linear encoder-decoder structure, which reduces the dimensionality to 32. This model is trained to focus on features relevant to the document collection, enhancing its ability to capture essential semantic relationships.
 
 ![Alt text](process_diagram.png)
 
