@@ -33,7 +33,19 @@ $$
 
 where \( x_i \) represents the original embedding, \( \hat{x}_i \) represents the reconstructed embedding, and \( N \) is the number of features in each embedding. This objective helps the model create embeddings that retain semantic similarity while reducing noise.
 
+## Embeddings Visualization
 
+#### Pre-Trained Embedding Figure
+
+![Alt text](pre_trained.png)
+
+#### Tunned Embedding Figure
+
+![Alt text](tunned.png)
+
+### Embedding Comparison
+
+The difference between the pre-trained and tuned embeddings primarily illustrates the impact of dataset size and task specificity on embedding quality. The pre-trained embeddings retain a broad, generalized structure without distinct clusters, as they are not adapted to the nuances of the specific dataset. In contrast, while the tuned embeddings show some level of separation, they lack defined clusters due to the limited data available for fine-tuning. With a larger dataset for tuning, we would likely observe more distinct clusters, as the embeddings would be better able to capture task-specific distinctions.
 
 ### Test Cases
 
@@ -61,21 +73,18 @@ docker run -d -p 1413:8888 home
 
 
 
-#### Entrepreneur
+#### Entrepreneur (Customer Interviews and Feedback)
 
 
-Customer Interviews and Feedback
+
 Five potential customers were interviewed. The system was shown to each user, and feedback was collected.
 
-Validation of Pain Point and System Effectiveness
-All interviewees confirmed the existence of the pain point. They stated that finding relevant content was time-consuming. However, users found the results lacked precision for their needs. The recommendations were useful, but they were not personalized enough. Users suggested incorporating more refined search filters. Some also recommended that the system learn from user interactions over time.
+All interviewees confirmed the existence of the pain point. They stated that finding relevant content was time-consuming. However, after a while testing it users found the results lacked precision for their needs. The recommendations were useful, but they were not personalized enough. Users suggested incorporating more refined search filters. Some also recommended that the system learn from user interactions over time.
 
 
 #### Typical phrases and reviews
 
 ![Alt text](feedbacks.png)
-
-
 
 
 ## Authors
